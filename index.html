@@ -7,14 +7,21 @@
 
 <body>
 	<h1>お問い合わせ情報</h1>
-	<form action="">
+	<!--action 送信先のURLを指定-->
+	<form action="./check.php" method="POST"><!--送信方法post　デフォルトはget-->
 	<div>
 		<label for="name">名前</label>
-		<input id="name" type="text">			
+		<input id="name" type="text" name="username">			
 	</div>
 	<div>
 		<label for="email">メールアドレス</label>
-		<input id="email" type="text">
+		<input id="email" type="text" name="email">
+	</div>
+
+	<div>
+		<table>お問合せ</table>
+		<textarea name="content"></textarea>
+
 	</div>
 		<input type="submit" value="送信">
 		
