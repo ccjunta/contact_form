@@ -2,31 +2,37 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
 	<title>お問い合わせ</title>
 </head>
 
 <body>
+	<div class="container">
 	<h1>お問い合わせ情報</h1>
 	<!--action 送信先のURLを指定-->
+	<table>
 	<form action="./check.php" method="POST"><!--送信方法post　デフォルトはget-->
-	<div>
-		<label for="name">名前</label>
+	<div class="content">
+		<label for="name">名前:</label>
 		<input id="name" type="text" name="username">			
 	</div>
-	<div>
-		<label for="email">メールアドレス</label>
+	<div class="content">
+		<label for="email">メールアドレス:</label>
 		<input id="email" type="text" name="email">
 	</div>
 
-	<div>
-		<table>お問合せ</table>
-		<textarea name="content"></textarea>
+	<div class="contact">
+		<table>お問合せ:</table>
+		<textarea name="content"></textarea><br>
 
+		<input class="button" type="submit" value="送信">
 	</div>
-		<input type="submit" value="送信">
+
 		
+	
 	</form>
-    
+	</table>
+	</div>
  				
 </body>
 </html>
