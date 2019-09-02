@@ -13,6 +13,7 @@ $options = [
   PDO::ATTR_EMULATE_PREPARES   => false,
 ];
 
+//データベースの情報を読み込む
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 
 
